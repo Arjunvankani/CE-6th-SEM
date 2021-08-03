@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ 
+ <title>Colour Button</title> 
+	 <style> 
+		 body { 
+		 margin: 0; 
+		 padding: 0; 
+		 font-size: 50px; 
+		 font-family: 'Century Gothic';
+		 opacity: 80%
+		 } 
+		 #container { 
+		 width: 1400px; 
+		 height: 600px; 
+		 margin: 50px; 
+		 border: 2px solid #000000; 
+		 } 
+		 #text {
+
+		 width: 1000px; 
+		 height: 35x; 
+		 margin: 40px; 
+		 padding: 20px; 
+		 border: 2px solid #000000; 
+		 } 
+		 .btn button { 
+		 width: 100px; 
+		 height: 35px; 
+		 margin: 60px 10px; 
+		 font-weight: bold; 
+		 border: 1px solid #000000; 
+		 } 
+	 </style> 
+</head> 
+<body> 
+	 <div id="container"> 
+		 <div id="text">Your current background color is White</div> 
+		 <div class="btn"> 
+			 <button id="Blue" style="background-color: #3030cf; " onclick="buttonClick('Blue')">Blue</button> 
+			 <button id="Red" style="background-color: #d32d2d;" onclick="buttonClick('Red')">Red</button> 
+			 <button id="Green" style="background-color: #0e960e;" onclick="buttonClick('Green')">Green</button> 
+			 <button id="Yellow" style="background-color: #e9e92a;" onclick="buttonClick('Yellow')">Yellow</button>
+			<button id="Reset" style="background-color: #ffffff;" onclick="buttonClick('White')">Reset</button> 
+		 </div> 
+	 </div> 
+		 <script> 
+			 function buttonClick(color) { 
+			 
+				document.getElementById('container').style.backgroundColor = color; 
+				document.getElementById('text').innerHTML = "Your current background color is " + color + "."; 
+				 
+				document.getElementById('text').style.backgroundColor = "White"; 
+				 if (color == 'White') { 
+					document.getElementById('text').style.color = "Black"; 
+				 } else 
+				 { 
+				 	document.getElementById('text').style.color = color; 
+				 } 
+			 } 
+		 </script> 
+</body> 
+</html>

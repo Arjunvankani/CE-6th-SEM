@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard events</title>
+</head>
+<body>
+<form action=""> 
+ <label for="name">Name: </label> 
+ <input type="text" id="name" 
+onkeypress="keyPressEvent()"><br><br> 
+ 
+ <label for="password">Password: </label> 
+ <input type="password" id="password" 
+onkeydown="keyDownEvent()"><br><br> 
+ <label for="phone">Phone: </label> 
+ <input type="number" id="phone" onkeyup="keyUpEvent()"> 
+ </form> 
+
+<script> 
+ function keyPressEvent() { 
+ alert("You've Pressed a key from keyboard.(onkeypress() is called.)"); 
+ }
+ function keyDownEvent() {
+ alert("You've Pressed a key from keyboard.(onkeydown() is called.)"); 
+ } 
+ function keyUpEvent() { 
+
+ alert("You've Pressed a key from keyboard.(onkeyup() is called.)"); 
+ } 
+ </script>
+
+</body>
+</html>

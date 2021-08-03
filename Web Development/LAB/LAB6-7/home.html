@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Session ~ 6</title>
+</head>
+<body style="background-color: #D2D9D9 ">
+
+	 <script> 
+	 	
+
+		 var enrollment = prompt("Enter the last 5 digits of your enrollment number: "); 
+		 document.write("<h1><center>The last 5 digits of your Enrollment Number: "+ enrollment +"</h1></center>"); 
+		 if (enrollment.length > 5 || enrollment.length < 5) 
+		 { 
+			enrollment = prompt("Please, Enter a valid Enrollment Number: "); 
+		 } 
+		 var mod = 0, result = 0; 
+		 for (var i = 0; i < 5; i++) 
+		 { 
+			 mod = enrollment%10; 
+			 result = result*10; 
+			 result = result+mod; 
+			 enrollment = Math.floor(enrollment/10); 
+		 } 
+		 document.write("<br><center><h1>Reversed Enrollment Number: "+result+"</center></h1>"); 
+	 </script> 
+
+</body>
+</html>

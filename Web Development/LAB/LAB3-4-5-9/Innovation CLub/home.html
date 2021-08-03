@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport">
+	<title>I-Fest 2021</title>
+	<link rel="icon" href="https://img.icons8.com/nolan/96/designer.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/js" href="main.js">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	
+	<script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="top">
+ 
+<nav role="navigation" style="position: right">
+  <div id="menuToggle">
+    
+    <input type="checkbox" />
+    
+    
+    <span></span>
+    <span></span>
+    <span></span>
+   
+    <ul id="menu">
+      <a href="home.html"><li>Home</li></a>
+      <a href="event.html"><li>Event'S</li></a>
+      <a href="schedule.html"><li>Schedule</li></a>
+      <a href="login.html"><li>Login/SignUp</li></a>
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="toggle">
+  <main class="color-mode">
+        <section class="color-mode__section">
+          <header class="color-mode__header">
+            <button
+              class="color-mode__btn light--hidden"
+              aria-label="Toggle light mode"
+            >
+              Toggle Light Mode
+              <svg aria-hidden="true">
+                <title>Light Mode</title>
+                <use href="#sun"></use>
+              </svg>
+            </button>
+            <button
+              class="color-mode__btn dark--hidden"
+              aria-label="Toggle dark mode"
+            >
+              Toggle Dark Mode
+              <svg aria-hidden="true">
+                <title>Dark Mode</title>
+                <use href="#moon"></use>
+              </svg>
+            </button>
+          </header>
+      </section>
+  </main>
+</div> 
+</div>
+</div>
+
+
+
+
+<div class="class" style="margin-left: 50px; display: inline-flex;" >
+<img src="https://img.icons8.com/dusk/200/000000/greentech.png"/>
+
+<b style="font-size: 80px; margin-left: 50px; font-family: 'Sofia';color:#3399ff;"> Innovation Club</b><center style="font-size:40px; font-family: 'Sofia';color:#1affa3">2021</center>
+
+	</div>
+
+<h1 style="color: #666659 ;font-family:'Sofia'; margin-right:  50px; margin-top:  100px;"> Innovation is commonly defined as the "carrying out of new combinations" that include "the introduction of new goods, ... new methods of production, ... the opening of new markets, ... the conquest of new sources of supply ... and the carrying out of a new organization of any industry".</h1>
+
+
+
+<div class="container">
+  <div class="box">
+    <img src="https://img.icons8.com/dusk/900/000000/python.png"/>">
+    <span>Python</span>
+    
+  </div>
+  <div class="box">
+    <img src="https://img.icons8.com/dusk/900/000000/web-design.png"/>">
+    <span>Frontend</span>
+  </div>
+  <div class="box">
+    <img src="https://img.icons8.com/bubbles/900/000000/source-code.png"/>">
+    <span>Backend</span>
+  </div>
+  <div class="box">
+    <img src="https://img.icons8.com/cute-clipart/900/000000/developer-mode.png"/>">
+    <span>Application</span>
+  </div>
+</div>
+
+
+<script src="main.js"></script> 
+</body>
+</html>

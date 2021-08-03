@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body  onload="loadPage()" onoffline="offlineEvent()" ononline="onlineEvent()" onresize="resizePage()">
+<script>
+	function loadPage(){
+		alert("Page has Loaded Succesfully!!");
+	}
+	function offlineEvent() { 
+		alert("You're Offline, Connect Your Phone With Internet");
+	}
+	function onlineEvent(){
+		alert("You're Online, Continue To Your Work");
+	}
+	function resizePage(){
+		alert("You're Resizing Page");
+	}
+</script>
+
+</body>
+</html>
